@@ -1,0 +1,169 @@
+/* FILE CSS ANDA TETAP SAMA PERSIS */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #111;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.postimg.cc/sfH8b6jS/8703d519bd4591ec5a0d569bcb763027.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 2px dashed #555;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px #f0f0f0;
+}
+
+.header h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #c0c0c0;
+    color: #c0c0c0;
+}
+
+.header .tagline {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.main-content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: rgba(34, 34, 34, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px #d3d3d3;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: #222;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f0f0f0;
+    outline: none;
+    box-shadow: 0 0 10px #f0f0f0;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-submit {
+    background-color: #f0f0f0;
+    color: #111;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 15px #f0f0f0;
+}
+
+.btn-submit:hover {
+    background-color: #0c8;
+    box-shadow: 0 0 20px #0c8;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    color: #777;
+    font-size: 0.9em;
+    border-top: 2px dashed #555;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-submit {
+        font-size: 1em;
+    }
+}

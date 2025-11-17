@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Halilintar - Cyberpunk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://i.postimg.cc/LXCNMLD7/PASUKAN-HALILINTAR-34-20251014-201437.jpg" alt="Logo Pasukan Halilintar" class="logo">
+            <h1>Pendaftaran Anggota Baru Pasukan Halilintar</h1>
+        </header>
+        <main class="main-content">
+            <div class="form-container">
+                <form id="formPendaftaran" class="form">
+                    <div class="form-group">
+                        <label for="nama"><i class="fas fa-id-card"></i> Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kelas"><i class="fas fa-user-graduate"></i> Kelas</label>
+                        <input type="text" id="kelas" name="kelas" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="agama"><i class="fas fa-pray"></i> Agama</label>
+                        <input type="text" id="agama" name="agama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jk"><i class="fas fa-transgender"></i> Jenis Kelamin</label>
+                        <select id="jk" name="jk" required>
+                            <option value="">-- Pilih --</option>
+                            <option value="laki-laki">Laki-laki</option>
+                            <option value="perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="kota"><i class="fas fa-city"></i> Kota Kelahiran</label>
+                        <input type="text" id="kota" name="kota" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl"><i class="fas fa-calendar-alt"></i> Tanggal Lahir</label>
+                        <input type="date" id="tgl" name="tgl" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ayah"><i class="fas fa-male"></i> Nama Ayah</label>
+                        <input type="text" id="ayah" name="ayah" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ibu"><i class="fas fa-female"></i> Nama Ibu</label>
+                        <input type="text" id="ibu" name="ibu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hp"><i class="fas fa-mobile-alt"></i> No. HP Pribadi</label>
+                        <input type="tel" id="hp" name="hp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ortu"><i class="fas fa-phone-square"></i> No. HP Orangtua</label>
+                        <input type="tel" id="ortu" name="ortu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email Pribadi</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat"><i class="fas fa-map-marker-alt"></i> Alamat Rumah</label>
+                        <textarea id="alamat" name="alamat" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="goldar"><i class="fas fa-heart"></i> Gol. Darah</label>
+                        <select id="goldar" name="goldar">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                            <option value="tidak tahu">Tidak tahu</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hobi"><i class="fas fa-code"></i> Bakat & Hobi</label>
+                        <textarea id="hobi" name="hobi" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="penyakit"><i class="fas fa-notes-medical"></i> Penyakit yang Diderita</label>
+                        <input type="text" id="penyakit" name="penyakit">
+                    </div>
+                    <div class="form-group">
+                        <label for="angkatan"><i class="fas fa-users"></i> Halilintar Angkatan</label>
+                        <input type="text" id="angkatan" name="angkatan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tahun"><i class="fas fa-calendar"></i> Tahun Masuk/Daftar</label>
+                        <input type="number" id="tahun" name="tahun" required>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-arrow-right"></i> Gabung Sekarang
+                    </button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 Pasukan Halilintar - Cyberpunk</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
